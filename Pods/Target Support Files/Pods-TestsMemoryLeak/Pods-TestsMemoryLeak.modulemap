@@ -1,0 +1,6 @@
+framework module Pods_TestsMemoryLeak {
+  umbrella header "Pods-TestsMemoryLeak-umbrella.h"
+
+  export *
+  module * { export * }
+}

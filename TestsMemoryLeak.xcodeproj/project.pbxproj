@@ -13,9 +13,16 @@
 		DDF371C71E125C510031B4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF371C51E125C510031B4EA /* Main.storyboard */; };
 		DDF371C91E125C520031B4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF371C81E125C520031B4EA /* Assets.xcassets */; };
 		DDF371CC1E125C520031B4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF371CA1E125C520031B4EA /* LaunchScreen.storyboard */; };
+		DDF371D51E1268250031B4EA /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF371D41E1268250031B4EA /* Connection.m */; };
+		DDF371D81E126EBC0031B4EA /* ResponseOrginizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF371D71E126EBC0031B4EA /* ResponseOrginizer.m */; };
+		DDF371DB1E126EFE0031B4EA /* AFHTTPSessionManager+Headers.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF371DA1E126EFE0031B4EA /* AFHTTPSessionManager+Headers.m */; };
+		F9734C6B20D82FFD38070478 /* Pods_TestsMemoryLeak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A3F4FED5EFB381944ED6D6 /* Pods_TestsMemoryLeak.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CD95A62F8840CAAB3B340DF /* Pods-TestsMemoryLeak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestsMemoryLeak.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestsMemoryLeak/Pods-TestsMemoryLeak.release.xcconfig"; sourceTree = "<group>"; };
+		3F564B9B9C936AB82E1B9630 /* Pods-TestsMemoryLeak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestsMemoryLeak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestsMemoryLeak/Pods-TestsMemoryLeak.debug.xcconfig"; sourceTree = "<group>"; };
+		B3A3F4FED5EFB381944ED6D6 /* Pods_TestsMemoryLeak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestsMemoryLeak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF371B91E125C510031B4EA /* TestsMemoryLeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestsMemoryLeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF371BD1E125C510031B4EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DDF371BF1E125C510031B4EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +33,12 @@
 		DDF371C81E125C520031B4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDF371CB1E125C520031B4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDF371CD1E125C520031B4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF371D31E1268250031B4EA /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		DDF371D41E1268250031B4EA /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		DDF371D61E126EBC0031B4EA /* ResponseOrginizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseOrginizer.h; sourceTree = "<group>"; };
+		DDF371D71E126EBC0031B4EA /* ResponseOrginizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseOrginizer.m; sourceTree = "<group>"; };
+		DDF371D91E126EFE0031B4EA /* AFHTTPSessionManager+Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Headers.h"; sourceTree = "<group>"; };
+		DDF371DA1E126EFE0031B4EA /* AFHTTPSessionManager+Headers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Headers.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +46,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9734C6B20D82FFD38070478 /* Pods_TestsMemoryLeak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32338A8E57C1E18A70C6493C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F564B9B9C936AB82E1B9630 /* Pods-TestsMemoryLeak.debug.xcconfig */,
+				3CD95A62F8840CAAB3B340DF /* Pods-TestsMemoryLeak.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6FF2C030A98EBD4EF35D2A38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3A3F4FED5EFB381944ED6D6 /* Pods_TestsMemoryLeak.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DDF371B01E125C510031B4EA = {
 			isa = PBXGroup;
 			children = (
 				DDF371BB1E125C510031B4EA /* TestsMemoryLeak */,
 				DDF371BA1E125C510031B4EA /* Products */,
+				32338A8E57C1E18A70C6493C /* Pods */,
+				6FF2C030A98EBD4EF35D2A38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +91,16 @@
 		DDF371BB1E125C510031B4EA /* TestsMemoryLeak */ = {
 			isa = PBXGroup;
 			children = (
+				DDF371D61E126EBC0031B4EA /* ResponseOrginizer.h */,
+				DDF371D71E126EBC0031B4EA /* ResponseOrginizer.m */,
+				DDF371D91E126EFE0031B4EA /* AFHTTPSessionManager+Headers.h */,
+				DDF371DA1E126EFE0031B4EA /* AFHTTPSessionManager+Headers.m */,
 				DDF371BF1E125C510031B4EA /* AppDelegate.h */,
 				DDF371C01E125C510031B4EA /* AppDelegate.m */,
 				DDF371C21E125C510031B4EA /* ViewController.h */,
 				DDF371C31E125C510031B4EA /* ViewController.m */,
+				DDF371D31E1268250031B4EA /* Connection.h */,
+				DDF371D41E1268250031B4EA /* Connection.m */,
 				DDF371C51E125C510031B4EA /* Main.storyboard */,
 				DDF371C81E125C520031B4EA /* Assets.xcassets */,
 				DDF371CA1E125C520031B4EA /* LaunchScreen.storyboard */,
@@ -86,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDF371D01E125C520031B4EA /* Build configuration list for PBXNativeTarget "TestsMemoryLeak" */;
 			buildPhases = (
+				567B70C1080F649724DD33FC /* [CP] Check Pods Manifest.lock */,
 				DDF371B51E125C510031B4EA /* Sources */,
 				DDF371B61E125C510031B4EA /* Frameworks */,
 				DDF371B71E125C510031B4EA /* Resources */,
+				A3D77B050CF8D5ADC5E18606 /* [CP] Embed Pods Frameworks */,
+				A883E602744CBEC66119135B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +188,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		567B70C1080F649724DD33FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D77B050CF8D5ADC5E18606 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestsMemoryLeak/Pods-TestsMemoryLeak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A883E602744CBEC66119135B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestsMemoryLeak/Pods-TestsMemoryLeak-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DDF371B51E125C510031B4EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -153,7 +243,10 @@
 			files = (
 				DDF371C41E125C510031B4EA /* ViewController.m in Sources */,
 				DDF371C11E125C510031B4EA /* AppDelegate.m in Sources */,
+				DDF371D81E126EBC0031B4EA /* ResponseOrginizer.m in Sources */,
 				DDF371BE1E125C510031B4EA /* main.m in Sources */,
+				DDF371DB1E126EFE0031B4EA /* AFHTTPSessionManager+Headers.m in Sources */,
+				DDF371D51E1268250031B4EA /* Connection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +364,7 @@
 		};
 		DDF371D11E125C520031B4EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F564B9B9C936AB82E1B9630 /* Pods-TestsMemoryLeak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9232HDTN9M;
@@ -283,6 +377,7 @@
 		};
 		DDF371D21E125C520031B4EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD95A62F8840CAAB3B340DF /* Pods-TestsMemoryLeak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9232HDTN9M;
@@ -312,6 +407,7 @@
 				DDF371D21E125C520031B4EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
